@@ -37,6 +37,8 @@ $ ls -a
 .config        .java         Public
 Desktop        .linuxmint    .sudo_as_admin_successful
 
+________________________________________________________________________________
+
 Задание 2
 
 a)
@@ -104,7 +106,8 @@ $ sudo file -s /dev/sda1
 
 Не знаю, какие здесь выводы можно сделать. Первая команда говорит, что данный файл является неким специальным блоком; вторая команда с ключом -l ничего не делает, лишь отмечает, что у меня нет разрешения на чтение.
 
-e)/proc/cpuinfo: empty
+e)$ file /proc/cpuinfo
+/proc/cpuinfo: empty
 
 Нет информации о кпу.
 
@@ -120,3 +123,46 @@ $ stat /etc/init.d/
  Создан: -
 
 Выводит информацию об указанном объекте.
+
+________________________________________________________________________________
+
+Задание 3
+
+a)$ mkdir -p /var/tmp/test/mytest
+$ cd /var/tmp/test/mytest
+
+b)$ touch 1 2 3
+$ file 1 2 3
+1: empty
+2: empty
+3: empty
+
+с)$ cp /etc/hosts /var/tmp/test/mytest
+$ ls -lt
+итого 4
+-rw-r--r-- 1 xukmet xukmet 228 сен 20 21:44 hosts
+-rw-rw-r-- 1 xukmet xukmet   0 сен 20 21:36 1
+-rw-rw-r-- 1 xukmet xukmet   0 сен 20 21:36 2
+-rw-rw-r-- 1 xukmet xukmet   0 сен 20 21:36 3
+
+d)$ mv 1 hosts
+$ ls
+2  3  hosts
+
+e)$ rm 2 3
+$ ls
+hosts
+
+f)$ mkdir ~/tmp
+$ mv hosts ~/tmp
+
+g)rm *
+
+h)rm -r /var/tmp/test
+
+i)$ cd ~/tmp
+
+j)$ touch digits.txt
+$ echo "0123456789" > digits.txt
+$ cat digits.txt
+0123456789
