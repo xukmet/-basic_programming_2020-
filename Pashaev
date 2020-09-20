@@ -162,7 +162,9 @@ h)rm -r /var/tmp/test
 
 i)$ cd ~/tmp
 
-j)$ touch digits.txt
-$ echo "0123456789" > digits.txt
-$ cat digits.txt
+j)$ touch digits
+$ echo "0123456789" > digits
+$ cat digits
 0123456789
+
+k)cat digits digits > newdigits
