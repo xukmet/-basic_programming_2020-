@@ -1,0 +1,38 @@
+Задание 1
+a)$ id
+uid=1000(xukmet) gid=1000(xukmet) группы=1000(xukmet),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),114(lpadmin),134(sambashare)
+
+b)$ date
+Вс 20 сен 2020 19:03:44 MSK
+
+c)$ pwd
+/home/xikmet
+
+d)
+$ ls
+Desktop    Downloads     Music     Public     Videos
+Documents  IdeaProjects  Pictures  Templates
+
+$ ls -l
+итого 36
+drwxr-xr-x 2 xukmet xukmet 4096 сен 19 19:53 Desktop
+drwxr-xr-x 4 xukmet xukmet 4096 сен 20 18:52 Documents
+drwxr-xr-x 2 xukmet xukmet 4096 сен 19 22:00 Downloads
+drwxr-xr-x 3 xukmet xukmet 4096 сен 19 18:41 IdeaProjects
+drwxr-xr-x 2 xukmet xukmet 4096 сен 17 21:25 Music
+drwxr-xr-x 2 xukmet xukmet 4096 сен 19 21:50 Pictures
+drwxr-xr-x 2 xukmet xukmet 4096 сен 17 21:25 Public
+drwxr-xr-x 2 xukmet xukmet 4096 сен 17 21:25 Templates
+drwxr-xr-x 2 xukmet xukmet 4096 сен 17 21:25 Videosы
+
+$ ls -a
+.              .dmrc         .local                     Templates
+..             Documents     .mozilla                   .var
+.android       Downloads     Music                      Videos
+.bash_history  .gitconfig    .nv                        .Xauthority
+.bash_logout   .gnupg        .pam_environment           .xinputrc
+.bashrc        .gtkrc-2.0    Pictures                   .xsession-errors
+.cache         .gtkrc-xfce   .pki                       .xsession-errors.old
+.cinnamon      IdeaProjects  .profile                   .xsessionrc
+.config        .java         Public
+Desktop        .linuxmint    .sudo_as_admin_successful
